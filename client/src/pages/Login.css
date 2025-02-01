@@ -1,0 +1,96 @@
+/* src/pages/Login.css */
+
+/* Navbar styles */
+.navbar {
+    background-color: #003A6A;  /* Blue color */
+    color: white;
+    padding: 16px;
+    font-size: 24px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;  /* Ensures the navbar stays on top */
+}
+
+.navbar-content {
+    display: flex; /* Enables flexbox layout */
+    align-items: center; /* Vertically centers the content */
+}
+
+.navbar-logo {
+    height: 50px; /* Adjust logo size */
+    margin-right: 16px; /* Adds space between the logo and the text */
+}
+
+.navbar h2, .navbar p {
+    margin: 0; /* Removes default margins */
+    padding: 0; /* Ensures proper alignment */
+    line-height: 1.4; /* Adjusts spacing between lines */
+}
+
+
+  
+  /* Form container */
+  .form-container {
+    background-image: url('../images/dispensary.png'); /* Correct path to the image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the form below the navbar */
+    align-items: center;
+    padding-top: 60px; /* Make space for the navbar */
+  }
+  
+  /* Login form container */
+  .login-form-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+
+  /* Login button styles */
+.login-btn {
+    display: block;
+    width: 100%;
+    background-color: #003A6A; /* Tailwind's bg-green-500 */
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .login-btn:hover {
+    background-color: #0062b2; /* Tailwind's bg-green-600 */
+    transform: scale(1.05); /* Subtle scale effect on hover */
+  }
+  
+  .login-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(72, 187, 120, 0.5); /* Focus ring for accessibility */
+  }
+  
+  .register-form {
+    border: none; /* Ensures no border around the form */
+    outline: none; /* Removes the outline around the form */
+  }
+  
+  .register-form .ant-input, 
+.register-form .ant-select-selector {
+  border: 1px solid #ccc; /* Sets a soft border for input fields and select */
+  outline: none; /* Removes outline on focus */
+}
+
+.register-form .ant-input:focus, 
+.register-form .ant-select-focused {
+  border-color: #003A6A; /* Adds focus border color to input and select */
+  box-shadow: none; /* Removes any box-shadow on focus */
+}
